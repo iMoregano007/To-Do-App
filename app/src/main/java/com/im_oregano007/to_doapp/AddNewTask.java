@@ -65,6 +65,7 @@ public class AddNewTask extends BottomSheetDialogFragment {
 
 
         }
+        mSaveBtn.setEnabled(false);
 
         editText.addTextChangedListener(new TextWatcher() {
             @Override
@@ -76,10 +77,10 @@ public class AddNewTask extends BottomSheetDialogFragment {
             public void onTextChanged(CharSequence s, int start, int before, int count) {
                 if(s.toString().equals("")){
                     mSaveBtn.setEnabled(false);
-                    mSaveBtn.setBackgroundColor(Color.GRAY);
+//                    mSaveBtn.setBackgroundColor(Color.GRAY);
                 } else {
                     mSaveBtn.setEnabled(true);
-                    mSaveBtn.setBackgroundColor(getResources().getColor(R.color.primary));
+//                    mSaveBtn.setBackgroundColor(getResources().getColor(R.color.primary));
                 }
             }
 
